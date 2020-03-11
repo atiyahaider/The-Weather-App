@@ -14,8 +14,7 @@ body {
   width: 100%;
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  /* base font size */
+  font-size: 16px; /* base font size */
 }
 
 .weatherContainer {
@@ -42,7 +41,8 @@ p {
 }
 
 #displayCurrent {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dzsnl7ocm/image/upload/v1557259471/few-clouds-1049.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://res.cloudinary.com/dzsnl7ocm/image/upload/v1557259471/few-clouds-1049.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -156,57 +156,55 @@ button.btn {
 #footer {
   margin-top: 5px;
   font-size: 0.9em;
-}
-#footer p {
-  text-shadow: 1px 2px 2px black;
-  margin: 0;
-}
-#footer a, #footer a:visited {
-  color: white !important;
-}
-#footer a:hover, #footer a:active {
-  color: black !important;
+  p {
+    text-shadow: 1px 2px 2px black;
+    margin: 0;
+  }
+  a, a:visited {
+    color: white !important;
+  }
+  a:hover, a:active {
+    color: black !important;
+  }
 }
 
 /* reduce base font size to reduce all rem sizes */
 @media screen and (max-width: 768px) {
+  //sm
   html {
     font-size: 13px;
   }
-
   #temp {
     font-size: 5rem;
   }
-
   #units {
     font-size: 1.65rem;
   }
-
   br {
     display: initial;
   }
 }
+
 @media screen and (max-width: 576px) {
+  //xs
   html {
     font-size: 14px;
   }
-
   .forecast {
     padding: 10px 0;
   }
-
   br {
     display: none;
   }
-
   #windHum {
     text-align: center;
   }
-
   #unitChangeButton {
     margin-bottom: 5px;
   }
 }
+
+///--------------------- SVG Icons---------------------
 .icon {
   width: 100px;
   height: 100px;
@@ -248,6 +246,7 @@ button.btn {
     stroke-dashoffset: 0;
   }
 }
+
 .shortRay {
   stroke: #ffdd1a;
   stroke-width: 1.5;
@@ -273,6 +272,7 @@ button.btn {
     stroke-dashoffset: 0;
   }
 }
+
 .small-cloud {
   -webkit-animation: float 8s linear infinite;
   animation: float 8s linear infinite;
@@ -327,6 +327,7 @@ button.btn {
     opacity: 0.75;
   }
 }
+
 .reverse-small-cloud {
   -webkit-animation: reverse-float 6s linear infinite;
   animation: reverse-float 6s linear infinite;
@@ -381,6 +382,7 @@ button.btn {
     opacity: 0.75;
   }
 }
+
 #drop1 {
   -webkit-animation: rain 1s linear infinite;
   animation: rain 1s linear infinite;
@@ -447,6 +449,7 @@ button.btn {
     opacity: 0;
   }
 }
+
 #rainDrizzle {
   stroke: lightblue;
   stroke-width: 1;
@@ -472,6 +475,7 @@ button.btn {
     stroke-dashoffset: 10;
   }
 }
+
 .lighting {
   animation-duration: 2.5s;
 }
@@ -556,6 +560,7 @@ button.btn {
     opacity: 0.5;
   }
 }
+
 #ice1 {
   -webkit-animation: ice 1s linear infinite;
   animation: ice 1s linear infinite;
@@ -622,6 +627,7 @@ button.btn {
     opacity: 0;
   }
 }
+
 #mist {
   fill: none;
   stroke: #333333;
@@ -632,13 +638,14 @@ button.btn {
 }
 
 @keyframes misty {
-  from {
-    x: -10px;
+ from {
+   x: -10px;
   }
   to {
     x: 17px;
   }
 }
+
 .stars {
   animation-duration: 3s;
 }
@@ -656,29 +663,25 @@ button.btn {
   -webkit-animation: windy 2.5s linear forwards infinite 0.5s;
   animation: windy 2.5s linear forwards infinite 0.5s;
 }
-
 #wind2 {
   -webkit-animation: windy 2.8s linear forwards infinite 0.55s;
-  animation: windy 2.8s linear forwards infinite 0.55s;
+  animation: windy 2.8s linear forwards infinite 0.55s ;
 }
-
 #wind3 {
   -webkit-animation: windy 3.5s linear forwards infinite 2s;
   animation: windy 3.5s linear forwards infinite 2s;
 }
-
 #wind4 {
   -webkit-animation: windy 3.5s linear forwards infinite 0.5s;
   animation: windy 3.5s linear forwards infinite 0.5s;
 }
-
 #wind5 {
   -webkit-animation: windy 4s linear forwards infinite 0.5s;
   animation: windy 4s linear forwards infinite 0.5s;
 }
 
 @-webkit-keyframes windy {
-  to {
+to {
     stroke-dashoffset: 0;
   }
 }
@@ -687,6 +690,7 @@ button.btn {
     stroke-dashoffset: 0;
   }
 }
+
 .tornado {
   fill: black;
   -webkit-animation: spin 0.85s infinite linear alternate;
@@ -695,7 +699,7 @@ button.btn {
 
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: skewX(12deg) translateX(5px);
+    -webkit-transform: skewX(12deg) translateX(5px);;
   }
   100% {
     -webkit-transform: skewX(-12deg) translateX(-5px);
